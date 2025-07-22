@@ -121,14 +121,14 @@ m=1
 C {iopin.sym} -40 -340 0 0 {name=p4 lab=VBB1
 }
 C {local_gnd.sym} 340 0 0 0 {name=l4 lab=GND}
-C {sg13g2_pr/cap_cmim.sym} 100 -510 0 0 {name=Decap1
+C {sg13g2_pr/cap_cmim.sym} 100 -510 0 0 {name=CDecap1
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
 m=2
 spiceprefix=X}
 C {local_gnd.sym} 100 -460 0 0 {name=l5 lab=GND}
-C {sg13g2_pr/cap_cmim.sym} 360 -510 0 0 {name=Decap2
+C {sg13g2_pr/cap_cmim.sym} 360 -510 0 0 {name=CDecap2
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -161,7 +161,7 @@ spiceprefix=X
 b=0
 m=1
 }
-C {sg13g2_pr/cap_cmim.sym} 540 -510 0 0 {name=Decap3
+C {sg13g2_pr/cap_cmim.sym} 540 -510 0 0 {name=CDecap3
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -182,7 +182,7 @@ b=0
 m=1
 }
 C {local_vdd.sym} 740 -560 0 0 {name=l12 lab=VCC}
-C {sg13g2_pr/cap_cmim.sym} 800 -510 0 0 {name=Decap4
+C {sg13g2_pr/cap_cmim.sym} 800 -510 0 0 {name=CDecap4
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -218,7 +218,7 @@ spiceprefix=X
 b=0
 m=1
 }
-C {sg13g2_pr/cap_cmim.sym} 980 -510 0 0 {name=Decap5
+C {sg13g2_pr/cap_cmim.sym} 980 -510 0 0 {name=CDecap5
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -234,7 +234,7 @@ b=0
 m=1
 }
 C {local_vdd.sym} 1180 -560 0 0 {name=l22 lab=VCC}
-C {sg13g2_pr/cap_cmim.sym} 1240 -510 0 0 {name=Decap6
+C {sg13g2_pr/cap_cmim.sym} 1240 -510 0 0 {name=CDecap6
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -257,7 +257,7 @@ spiceprefix=X
 b=0
 m=1
 }
-C {sg13g2_pr/cap_cmim.sym} 1420 -510 0 0 {name=Decap7
+C {sg13g2_pr/cap_cmim.sym} 1420 -510 0 0 {name=CDecap7
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
@@ -273,7 +273,7 @@ b=0
 m=1
 }
 C {local_vdd.sym} 1620 -560 0 0 {name=l28 lab=VCC}
-C {sg13g2_pr/cap_cmim.sym} 1680 -510 0 0 {name=Decap8
+C {sg13g2_pr/cap_cmim.sym} 1680 -510 0 0 {name=CDecap8
 model=cap_cmim
 w=20.0e-6
 l=25.0e-6
