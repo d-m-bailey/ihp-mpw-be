@@ -1,0 +1,15 @@
+** sch_path: /home/shr25031/ihp-mpw-be/ihp-mpw-be/TO_Apr2025/40_GHZ_LOW_NOISE_TIA/xschem/40_GHZ_LOW_NOISE_TIA.sch
+.subckt 40_GHZ_LOW_NOISE_TIA RFIN GND VCC1 VCC2 RFOUT VCC3
+*.PININFO RFIN:I GND:B VCC1:B VCC2:B RFOUT:O VCC3:B
+XQq1 net1 RFIN GND GND npn13G2 le=900e-9 we=70.0n m=10
+XCc1 VCC1 GND cap_cmim w=30.0e-6 l=60.0e-6 m=2
+XQq2 VCC2 net1 net2 GND npn13G2 le=900e-9 we=70.0n m=5
+XCc2 VCC2 GND cap_cmim w=30.0e-6 l=60.0e-6 m=2
+XRRE2 net2 GND rppd w=3.0e-6 l=6.0e-6 m=1 b=0
+XRRC1 VCC1 net1 rppd w=8.0e-6 l=4.5e-6 m=1 b=0
+XQq3 RFOUT net2 net3 GND npn13G2 le=900e-9 we=70.0n m=10
+XRRF RFIN net2 rppd w=2.0e-6 l=6.5e-6 m=1 b=0
+XRRE3 net3 GND rsil w=4.0e-6 l=3.0e-6 m=1 b=0
+XRRC3 VCC3 RFOUT rsil w=4.0e-6 l=14.5e-6 m=1 b=0
+XCc3 VCC3 GND cap_cmim w=30.0e-6 l=60.0e-6 m=2
+.ends
