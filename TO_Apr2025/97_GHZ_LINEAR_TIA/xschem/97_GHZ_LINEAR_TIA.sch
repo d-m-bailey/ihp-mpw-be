@@ -143,8 +143,6 @@ C {local_gnd.sym} 1360 -800 0 0 {name=l13 lab=GND}
 C {local_gnd.sym} 1020 -630 0 0 {name=l14 lab=GND}
 C {local_gnd.sym} 980 -80 0 0 {name=l15 lab=GND}
 C {opin.sym} 1680 -580 0 0 {name=p2 lab=RFOUT}
-C {iopin.sym} -110 -800 0 0 {name=p5 lab=VB1
-}
 C {title.sym} 150 0 0 0 {name=T1 author="H. Ojiro"}
 C {sg13g2_pr/rhigh.sym} 980 -190 2 0 {name=RRE2
 w=8.0e-6
@@ -216,8 +214,6 @@ Nx=1
 C {lab_wire.sym} 680 -340 0 0 {name=p8 sig_type=std_logic lab=NETF}
 C {lab_wire.sym} 930 -340 0 0 {name=p7 sig_type=std_logic lab=NET23}
 C {lab_wire.sym} 620 -500 0 0 {name=p9 sig_type=std_logic lab=NET1}
-C {iopin.sym} -110 -840 0 0 {name=p10 lab=VB2
-}
 C {lab_wire.sym} 1300 -270 0 0 {name=p11 sig_type=std_logic lab=NET34}
 C {lab_wire.sym} 1300 -430 0 0 {name=p12 sig_type=std_logic lab=NET3}
 C {sg13g2_pr/npn13G2.sym} 1280 -570 0 0 {name=QQ32
