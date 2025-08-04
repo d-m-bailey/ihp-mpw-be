@@ -1,0 +1,35 @@
+name: Clean Notebooks
+
+on:
+  push:
+    paths:
+      - '**/*.ipynb'  # only trigger if a notebook was changed
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install nbstripout
+        run: pip install nbstripout
+
+      - name: Strip notebook outputs
+        run: |
+          nbstripout --install
+          nbstripout --clear --force **/*.ipynb
+
+      - name: Commit and push cleaned notebooks
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add . || true
+          git diff --cached --quiet || git commit -m "Auto-clean notebooks"
+          git push
