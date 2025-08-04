@@ -26,10 +26,9 @@ jobs:
           nbstripout --install
           find . -name '*.ipynb' -exec nbstripout {} \; 
 
-      - name: Commit and push cleaned notebooks
+      - name: Check for changes
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add . || true
-          git diff --cached --quiet || git commit -m "Auto-clean notebooks"
-          git push
+          git diff --exit-code || (
+            echo "::error ::Notebooks need cleaning. Please run the cleaner."
+            exit 1
+          )
