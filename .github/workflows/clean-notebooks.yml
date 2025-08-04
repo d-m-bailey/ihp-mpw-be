@@ -24,7 +24,7 @@ jobs:
       - name: Strip notebook outputs
         run: |
           nbstripout --install
-          nbstripout --clear --force **/*.ipynb
+          nbstripout **/*.ipynb
 
       - name: Commit and push cleaned notebooks
         run: |
