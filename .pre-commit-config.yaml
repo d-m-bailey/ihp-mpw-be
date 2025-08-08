@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: clean-notebook
+        name: Clean notebook cells
+        entry: python scripts/clean_notebook.py
+        language: python
+        additional_dependencies:
+          - nbformat
+        files: \.ipynb$
