@@ -26,6 +26,9 @@ jobs:
           nbstripout --install
           find . -name '*.ipynb' -exec nbstripout {} \; 
 
+      - name: Run blob path check
+        run: python scripts/check_blob_paths.py
+
       - name: Check for changes
         run: |
           git diff --exit-code || (
