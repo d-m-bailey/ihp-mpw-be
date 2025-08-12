@@ -1,0 +1,11 @@
+clear_metadata:
+  # Remove Colab-specific notebook metadata
+  - colab
+  - kernelspec
+  - language_info
+  - id
+clear_cell_metadata:
+  - id
+clear_output_metadata:
+  - outputId
+  - base_uri

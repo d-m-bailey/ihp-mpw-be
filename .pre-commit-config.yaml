@@ -8,10 +8,3 @@ repos:
         additional_dependencies:
           - nbformat
         files: \.ipynb$
-
-  - repo: https://github.com/kynan/nbstripout
-    rev: 0.8.1  # use latest stable tag if available
-    hooks:
-      - id: nbstripout
-        files: \.ipynb$
-
