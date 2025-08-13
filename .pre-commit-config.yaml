@@ -8,3 +8,11 @@ repos:
         additional_dependencies:
           - nbformat
         files: \.ipynb$
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: 4.0.1
+    hooks:
+      - id: nb-clean
+        args:
+          - --preserve-cell-metadata
+          - id
+          - --
