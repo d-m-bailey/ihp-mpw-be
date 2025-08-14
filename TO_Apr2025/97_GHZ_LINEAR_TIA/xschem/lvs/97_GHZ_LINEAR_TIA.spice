@@ -1,0 +1,36 @@
+** sch_path: /home/shr25031/ihp-mpw-be/ihp-mpw-be/TO_Apr2025/97_GHZ_LINEAR_TIA/xschem/97_GHZ_LINEAR_TIA.sch
+.subckt 97_GHZ_LINEAR_TIA RFIN GND VCC1 VCC2 RFOUT
+*.PININFO RFIN:I GND:B VCC1:B VCC2:B RFOUT:O
+XQQ11 NET1 RFIN GND GND npn13G2 le=900e-9 we=70.0n m=10
+XCDC1 VCC1 GND cap_cmim w=60.0e-6 l=60.0e-6 m=2
+XQQ21 VCC2 NET12 NET23 GND npn13G2 le=900e-9 we=70.0n m=5
+XCDC3 VCC1 GND cap_cmim w=20.0e-6 l=100.0e-6 m=1
+XRRE2 NET23 GND rhigh w=8.0e-6 l=8.2e-6 m=1 b=0
+XRRC1 VCC1 NET12 rppd w=8.5e-6 l=2.0e-6 m=1 b=0
+XQQ31 NET3 NET23 NET34 GND npn13G2 le=900e-9 we=70.0n m=5
+XRRF1 RFIN NETF rppd w=4.0e-6 l=13.3e-6 m=1 b=0
+XRRE3 NET34 GND rppd w=4.0e-6 l=2.9e-6 m=1 b=0
+XCDC24 VCC2 GND cap_cmim w=60.0e-6 l=60.0e-6 m=2
+XQQ12 NET12 VB1 NET1 GND npn13G2 le=900e-9 we=70.0n m=2
+XRRF2 GND RFIN rhigh w=4.0e-6 l=9.9e-6 m=1 b=0
+XQQF NET23 NET23 NETF GND npn13G2 le=900e-9 we=70.0n m=1
+XQQ32 VCC1 VCC1 NET3 GND npn13G2 le=900e-9 we=70.0n m=2
+XQQ41 NET4 NET34 _net0 GND npn13G2 le=900e-9 we=70.0n m=10
+XRRE4 _net0 GND rsil w=18.0e-6 l=30.0e-6 m=1 b=0
+XQQ42 RFOUT VB2 NET4 GND npn13G2 le=900e-9 we=70.0n m=4
+XRRC4 VCC2 RFOUT rppd w=20.6e-6 l=2.1e-6 m=1 b=0
+XRRB1_RC1 VCC1 VB1 rhigh w=3.0e-6 l=2.94e-6 m=1 b=0
+XQQB11 VB1 _net1 _net2 GND npn13G2 le=900e-9 we=70.0n m=1
+XRRB1_RB1 _net1 VB1 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XRRB1_RC2 _net2 _net3 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XRRB1_RB2 _net4 _net3 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XQQB12 _net3 _net4 GND GND npn13G2 le=900e-9 we=70.0n m=1
+XRRB2_RC1 VCC2 VB2 rhigh w=3.0e-6 l=1.94e-6 m=1 b=0
+XQQB21 VB2 _net5 _net6 GND npn13G2 le=900e-9 we=70.0n m=1
+XRRB2_RB1 _net5 VB2 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XRRB2_RC2 _net7 _net6 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XQQB22 _net7 _net8 GND GND npn13G2 le=900e-9 we=70.0n m=1
+XRRB2_RB2 _net8 _net7 rhigh w=3.0e-6 l=2.0e-6 m=1 b=0
+XCCB1 VB1 GND cap_cmim w=30.0e-6 l=30.0e-6 m=1
+XCCB2 VB2 GND cap_cmim w=30.0e-6 l=30.0e-6 m=1
+.ends
