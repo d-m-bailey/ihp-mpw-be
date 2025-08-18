@@ -17,9 +17,9 @@ lab=#net1}
 N 370 120 610 120 {
 lab=IDC}
 N 310 120 310 180 {
-lab=GND}
+lab=GNDD}
 N 650 120 650 180 {
-lab=GND}
+lab=GNDD}
 N 310 60 310 90 {
 lab=IDC}
 N 310 60 370 60 {
@@ -103,37 +103,37 @@ lab=VDC}
 N 320 -570 630 -570 {
 lab=VDC}
 N 0 180 0 220 {
-lab=GND}
+lab=GNDD}
 N 310 180 650 180 {
-lab=GND}
+lab=GNDD}
 N 750 -40 770 -40 {
-lab=GND}
+lab=GNDD}
 N 490 -260 560 -260 {
-lab=GND}
+lab=GNDD}
 N 800 -260 950 -260 {
-lab=GND}
+lab=GNDD}
 N 750 -40 750 180 {
-lab=GND}
+lab=GNDD}
 N 650 -40 750 -40 {
-lab=GND}
+lab=GNDD}
 N 650 180 750 180 {
-lab=GND}
+lab=GNDD}
 N 490 -260 490 -190 {
-lab=GND}
+lab=GNDD}
 N 320 -260 490 -260 {
-lab=GND}
+lab=GNDD}
 N 650 -190 800 -190 {
-lab=GND}
+lab=GNDD}
 N 800 -260 800 -190 {
-lab=GND}
+lab=GNDD}
 N 710 -260 800 -260 {
-lab=GND}
+lab=GNDD}
 N 650 -190 650 -40 {
-lab=GND}
+lab=GNDD}
 N 490 -190 650 -190 {
-lab=GND}
+lab=GNDD}
 N 530 -40 650 -40 {
-lab=GND}
+lab=GNDD}
 N -430 -10 -430 20 {
 lab=#net4}
 N -670 20 -550 20 {
@@ -147,9 +147,9 @@ lab=#net4}
 N -510 120 -270 120 {
 lab=IDC}
 N -210 120 -210 180 {
-lab=GND}
+lab=GNDD}
 N -550 120 -550 180 {
-lab=GND}
+lab=GNDD}
 N -210 60 -210 90 {
 lab=IDC}
 N -270 60 -210 60 {
@@ -161,15 +161,15 @@ lab=IDC}
 N -270 120 -250 120 {
 lab=IDC}
 N -670 -40 -650 -40 {
-lab=GND}
+lab=GNDD}
 N -550 180 -210 180 {
-lab=GND}
+lab=GNDD}
 N -650 -40 -650 180 {
-lab=GND}
+lab=GNDD}
 N -650 -40 -430 -40 {
-lab=GND}
+lab=GNDD}
 N -650 180 -550 180 {
-lab=GND}
+lab=GNDD}
 N 0 30 310 30 {
 lab=IDC}
 N -780 -40 -710 -40 {
@@ -253,9 +253,9 @@ lab=ICC}
 N -1410 130 -1390 130 {
 lab=ICC}
 N -1810 -30 -1790 -30 {
-lab=GND}
+lab=GNDC}
 N -1790 -30 -1570 -30 {
-lab=GND}
+lab=GNDC}
 N -1920 -30 -1850 -30 {
 lab=OSCN}
 N -1920 -120 -1920 -30 {
@@ -325,19 +325,19 @@ lab=OSCN}
 N -1350 20 -1350 70 {
 lab=ICC}
 N -1790 -30 -1790 170 {
-lab=GND}
+lab=GNDC}
 N -1790 170 -1690 170 {
-lab=GND}
+lab=GNDC}
 N -1690 130 -1690 170 {
-lab=GND}
+lab=GNDC}
 N -1530 170 -1350 170 {
-lab=GND}
+lab=GNDC}
 N -1350 130 -1350 170 {
-lab=GND}
+lab=GNDC}
 N -1530 170 -1530 200 {
-lab=GND}
+lab=GNDC}
 N -1690 170 -1530 170 {
-lab=GND}
+lab=GNDC}
 N -1990 -450 -1990 -420 {
 lab=OSCP}
 N -1990 -530 -1990 -510 {
@@ -389,13 +389,13 @@ lab=LON}
 N -600 -590 0 -590 {
 lab=VDC}
 N 0 180 310 180 {
-lab=GND}
+lab=GNDD}
 N 0 0 0 30 {
 lab=IDC}
 N -210 30 0 30 {
 lab=IDC}
 N -210 180 0 180 {
-lab=GND}
+lab=GNDD}
 C {sg13g2_pr/sg13_lv_nmos.sym} 580 -260 0 1 {name=M6
 l=0.13u
 w=60.0u
@@ -403,7 +403,7 @@ ng=10
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/rppd.sym} 950 -490 0 0 {name=RL2
 w=4.50e-6
 l=3.20e-6
@@ -429,7 +429,7 @@ ng=10
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 690 -260 0 0 {name=M7
 l=0.13u
 w=60.0u
@@ -437,7 +437,7 @@ ng=10
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 300 -260 0 0 {name=M5
 l=0.13u
 w=60.0u
@@ -445,7 +445,7 @@ ng=10
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 790 -40 0 1 {name=M4
 l=0.13u
 w=90.0u
@@ -453,7 +453,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 510 -40 0 0 {name=M3
 l=0.13u
 w=90.0u
@@ -461,7 +461,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 330 120 0 1 {name=M2
 l=0.13u
 w=120.0u
@@ -469,7 +469,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 630 120 0 0 {name=M1
 l=0.13u
 w=120.0u
@@ -477,7 +477,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {iopin.sym} 190 -370 0 1 {name=p4 lab=RFN}
 C {iopin.sym} 190 -420 0 1 {name=p5 lab=RFP}
 C {iopin.sym} 0 -620 3 0 {name=p6 lab=VDC}
@@ -492,7 +492,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -410 -40 0 1 {name=M12
 l=0.13u
 w=90.0u
@@ -500,7 +500,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -230 120 0 0 {name=M9
 l=0.13u
 w=120.0u
@@ -508,7 +508,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -530 120 0 1 {name=M10
 l=0.13u
 w=120.0u
@@ -516,7 +516,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/cap_cmim.sym} -950 -490 0 0 {name=C1
 model=cap_cmim
 w=11.745e-6
@@ -554,7 +554,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -1550 -30 0 1 {name=M14
 l=0.13u
 w=90.0u
@@ -562,7 +562,7 @@ ng=15
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -1370 130 0 0 {name=M15
 l=0.13u
 w=120.0u
@@ -570,7 +570,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/sg13_lv_nmos.sym} -1670 130 0 1 {name=M16
 l=0.13u
 w=120.0u
@@ -578,7 +578,7 @@ ng=20
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
-}
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l ng=@ng m=@m"}
 C {sg13g2_pr/cap_cmim.sym} -2090 -480 0 0 {name=C3
 model=cap_cmim
 w=19.1e-6
@@ -657,11 +657,12 @@ w=10e-6
 s=10e-6
 d=222e-6
 nr_r=2}
-C {iopin.sym} -2170 -600 0 1 {name=p19 lab=GND}
-C {local_gnd.sym} -1960 -450 0 0 {name=l5 lab=GND}
-C {local_gnd.sym} -1540 -450 0 0 {name=l6 lab=GND}
-C {local_gnd.sym} -1530 200 0 0 {name=l7 lab=GND}
-C {local_gnd.sym} 0 220 0 0 {name=l8 lab=GND}
-C {local_gnd.sym} -820 -460 0 0 {name=l9 lab=GND}
-C {local_gnd.sym} -400 -460 0 0 {name=l10 lab=GND}
+C {iopin.sym} -2170 -600 0 1 {name=p19 lab=GNDC}
+C {local_gnd.sym} -1960 -450 0 0 {name=l5 lab=GNDC}
+C {local_gnd.sym} -1540 -450 0 0 {name=l6 lab=GNDC}
+C {local_gnd.sym} -1530 200 0 0 {name=l7 lab=GNDC}
+C {local_gnd.sym} 0 220 0 0 {name=l8 lab=GNDD}
+C {local_gnd.sym} -820 -460 0 0 {name=l9 lab=GNDD}
+C {local_gnd.sym} -400 -460 0 0 {name=l10 lab=GNDD}
 C {title.sym} -2010 440 0 0 {name=T1 author="H. Ojiro"}
+C {iopin.sym} -2170 -570 0 1 {name=p8 lab=GNDD}
