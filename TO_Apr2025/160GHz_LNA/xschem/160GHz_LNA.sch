@@ -89,8 +89,9 @@ model=cap_rfcmim
 lvs_model=rfcmim
 w=10.0e-6
 l=15.0e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=6.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {sg13g2_pr/npn13G2.sym} 280 0 0 0 {name=Q1
 model=npn13G2
 spiceprefix=X
@@ -105,6 +106,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 160 -560 0 0 {name=l2 lab=VBB1}
 C {iopin.sym} -40 -300 0 0 {name=p3 lab=VCC
@@ -117,6 +119,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {iopin.sym} -40 -340 0 0 {name=p4 lab=VBB1
 }
@@ -140,8 +143,9 @@ model=cap_rfcmim
 lvs_model=rfcmim
 w=32.0e-6
 l=3.72e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 80 30 0 1 {name=l7 lab=GND}
 C {local_gnd.sym} 390 -30 0 1 {name=l8 lab=GND}
 C {sg13g2_pr/cap_rfcmim.sym} 490 -60 3 0 {name=C3
@@ -149,8 +153,9 @@ model=cap_rfcmim
 lvs_model=rfcmim
 w=5.2e-6
 l=2.4e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 490 -30 0 1 {name=l9 lab=GND}
 C {local_vdd.sym} 600 -560 0 0 {name=l10 lab=VBB1}
 C {sg13g2_pr/rhigh.sym} 600 -430 0 0 {name=Rb2
@@ -160,6 +165,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/cap_cmim.sym} 540 -510 0 0 {name=CDecap3
 model=cap_cmim
@@ -180,6 +186,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 740 -560 0 0 {name=l12 lab=VCC}
 C {sg13g2_pr/cap_cmim.sym} 800 -510 0 0 {name=CDecap4
@@ -196,16 +203,18 @@ model=cap_rfcmim
 lvs_model=rfcmim
 w=32.0e-6
 l=3.72e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 830 -90 0 1 {name=l16 lab=GND}
 C {sg13g2_pr/cap_rfcmim.sym} 930 -120 3 0 {name=C5
 model=cap_rfcmim
 lvs_model=rfcmim
 w=7.6e-6
 l=2.5e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 930 -90 0 1 {name=l17 lab=GND}
 C {local_gnd.sym} 440 140 0 0 {name=l18 lab=GND}
 C {local_gnd.sym} 880 140 0 0 {name=l19 lab=GND}
@@ -217,6 +226,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/cap_cmim.sym} 980 -510 0 0 {name=CDecap5
 model=cap_cmim
@@ -232,6 +242,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 1180 -560 0 0 {name=l22 lab=VCC}
 C {sg13g2_pr/cap_cmim.sym} 1240 -510 0 0 {name=CDecap6
@@ -256,6 +267,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/cap_cmim.sym} 1420 -510 0 0 {name=CDecap7
 model=cap_cmim
@@ -271,6 +283,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 1620 -560 0 0 {name=l28 lab=VCC}
 C {sg13g2_pr/cap_cmim.sym} 1680 -510 0 0 {name=CDecap8
@@ -292,30 +305,34 @@ model=cap_rfcmim
 lvs_model=rfcmim
 w=32.0e-6
 l=12.5e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {sg13g2_pr/cap_rfcmim.sym} 1370 -180 3 0 {name=C7
 model=cap_rfcmim
 lvs_model=rfcmim
 w=5.1e-6
 l=2.4e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 1320 140 0 0 {name=l32 lab=GND}
 C {sg13g2_pr/cap_rfcmim.sym} 1710 -240 3 0 {name=C8
 model=cap_rfcmim
 lvs_model=rfcmim
 w=32.0e-6
 l=6.2e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {sg13g2_pr/cap_rfcmim.sym} 1810 -240 3 0 {name=C9
 model=cap_rfcmim
 lvs_model=rfcmim
 w=3.2e-6
 l=2.4e-6
-wfeed=5.0e-6
-spiceprefix=X}
+wfeed=3.0e-6
+spiceprefix=X
+lvs_format="@spiceprefix@name @pinlist @lvs_model w=@w l=@l wfeed=@wfeed"}
 C {local_gnd.sym} 1760 140 0 0 {name=l33 lab=GND}
 C {opin.sym} 1900 -240 0 0 {name=p5 lab=RF_OUTPUT}
 C {iopin.sym} -40 -380 0 0 {name=p6 lab=VBB2

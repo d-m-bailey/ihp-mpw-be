@@ -151,6 +151,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/rppd.sym} 620 -690 2 0 {name=RRC1
 w=8.5e-6
@@ -159,6 +160,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/npn13G2.sym} 1280 -340 0 0 {name=QQ31
 model=npn13G2
@@ -172,6 +174,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_gnd.sym} 1330 -340 0 0 {name=l2 lab=GND}
 C {sg13g2_pr/rppd.sym} 1300 -190 2 0 {name=RRE3
@@ -181,6 +184,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 980 -900 0 0 {name=lvcc2_1 lab=VCC2}
 C {sg13g2_pr/cap_cmim.sym} 1040 -850 0 0 {name=CDC24
@@ -204,6 +208,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_gnd.sym} 420 -80 0 0 {name=l5 lab=GND}
 C {sg13g2_pr/npn13G2.sym} 810 -360 1 0 {name=QQF
@@ -236,6 +241,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_gnd.sym} 1580 -80 0 1 {name=l10 lab=GND}
 C {sg13g2_pr/npn13G2.sym} 1600 -480 0 1 {name=QQ42
@@ -254,6 +260,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 620 -630 0 0 {name=p13 sig_type=std_logic lab=NET12}
 C {lab_wire.sym} 1580 -370 0 0 {name=p14 sig_type=std_logic lab=NET4}
@@ -266,6 +273,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/npn13G2.sym} 200 -700 0 0 {name=QQB11
 model=npn13G2
@@ -281,6 +289,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 220 -640 0 0 {name=p17 sig_type=std_logic lab=_net2}
 C {sg13g2_pr/rhigh.sym} 220 -580 2 0 {name=RRB1_RC2
@@ -290,6 +299,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 220 -450 0 0 {name=p18 sig_type=std_logic lab=_net3}
 C {sg13g2_pr/rhigh.sym} 140 -310 0 1 {name=RRB1_RB2
@@ -299,6 +309,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/npn13G2.sym} 200 -200 0 0 {name=QQB12
 model=npn13G2
@@ -315,6 +326,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/npn13G2.sym} 2100 -690 0 1 {name=QQB21
 model=npn13G2
@@ -330,6 +342,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 2220 -750 0 0 {name=p20 sig_type=std_logic lab=_net5}
 C {lab_wire.sym} 2080 -600 0 0 {name=p21 sig_type=std_logic lab=_net6}
@@ -340,6 +353,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 2080 -480 0 0 {name=p22 sig_type=std_logic lab=_net7}
 C {sg13g2_pr/npn13G2.sym} 2100 -190 0 1 {name=QQB22
@@ -357,6 +371,7 @@ model=rhigh
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {lab_wire.sym} 2220 -250 0 0 {name=p23 sig_type=std_logic lab=_net8}
 C {sg13g2_pr/cap_cmim.sym} 310 -850 0 0 {name=CCB1
