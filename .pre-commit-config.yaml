@@ -1,0 +1,26 @@
+repos:
+  - repo: local
+    hooks:
+      - id: clean-notebook
+        name: Clean notebook cells
+        entry: python scripts/clean_notebook.py
+        language: python
+        additional_dependencies:
+          - nbformat
+        files: \.ipynb$
+      - id: refresh-index 
+        # filter and pre-commit require double commit. This should correct it.
+        name: Refresh Git index
+        entry: git update-index --refresh
+        language: system
+        always_run: true
+        stages: [pre-commit]
+
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: 4.0.1
+    hooks:
+      - id: nb-clean
+        args:
+          - --preserve-cell-metadata
+          - id
+          - --
