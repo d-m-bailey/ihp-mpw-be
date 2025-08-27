@@ -86,6 +86,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/rppd.sym} 300 -290 2 0 {name=RRC1
 w=8.0e-6
@@ -94,6 +95,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/npn13G2.sym} 960 0 0 0 {name=Qq3
 model=npn13G2
@@ -107,6 +109,7 @@ model=rppd
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_gnd.sym} 1010 0 0 0 {name=l2 lab=GND}
 C {sg13g2_pr/rsil.sym} 980 150 2 0 {name=RRE3
@@ -116,6 +119,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {sg13g2_pr/rsil.sym} 980 -290 2 0 {name=RRC3
 w=4.0e-6
@@ -124,6 +128,7 @@ model=rsil
 spiceprefix=X
 b=0
 m=1
+lvs_format="@spiceprefix@name @pinlist @model w=@w l=@l m=@m b=@b"
 }
 C {local_vdd.sym} 980 -500 0 0 {name=lvcc3 lab=VCC3}
 C {sg13g2_pr/cap_cmim.sym} 1040 -450 0 0 {name=Cc3
