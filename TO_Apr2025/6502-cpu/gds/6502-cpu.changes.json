@@ -1,0 +1,209 @@
+{
+  "cells": {
+    "cpu_top": [
+      { "comment": "Add top level top_metal2 pins" },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          1572000,
+          740000,
+          1642000,
+          810000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          1830000,
+          458000,
+          1900000,
+          528000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          328000,
+          740000,
+          398000,
+          810000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          70000,
+          458000,
+          140000,
+          528000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          70000,
+          352000,
+          140000,
+          422000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          333000,
+          70000,
+          403000,
+          140000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          1830000,
+          352000,
+          1900000,
+          422000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          134,
+          2
+        ],
+        "box": [
+          1567000,
+          70000,
+          1637000,
+          140000
+        ]
+      },
+      { "comment": "Add top level top_metal2 labels" },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "vss",
+        "x": 1602000,
+        "y": 770000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "iovss",
+        "x": 1870000,
+        "y": 498000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "vdd",
+        "x": 368000,
+        "y": 780000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "iovdd",
+        "x": 100000,
+        "y": 498000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "iovdd",
+        "x": 100000,
+        "y": 392000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "vss",
+        "x": 373000,
+        "y": 110000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "iovss",
+        "x": 1870000,
+        "y": 392000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          134,
+          25
+        ],
+        "text": "vdd",
+        "x": 1607000,
+        "y": 110000
+      }
+    ]
+  }
+}

@@ -241,7 +241,6 @@
           958250
         ]
       },
-      { "comment": "Add top level top_metal2 labels" },
       {
         "action": "add",
         "type": "box",
@@ -256,6 +255,7 @@
           278305
         ]
       },
+      { "comment": "Add top level top_metal2 labels" },
       {
         "action": "add",
         "type": "label",
