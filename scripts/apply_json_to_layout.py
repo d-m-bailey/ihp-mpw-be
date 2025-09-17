@@ -50,6 +50,9 @@ def apply_json_to_layout(input_layout: str, json_file: str, output_layout: str):
                             box = s.box()
                             if box.left == x1 and box.right == x2 and box.bottom == y1 and box.top == y2:
                                 shapes.erase(s)
+                elif action["type"] == "erase_layer":
+                    for s in list(shapes.each()):
+                        shapes.erase(s)
                 else:
                     pass
     
