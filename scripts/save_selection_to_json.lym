@@ -53,6 +53,15 @@ for s in lv.each_object_selected():
                    "layer": [info.layer, info.datatype],
                    "box": [box.left, box.bottom, box.right, box.top]
                 }
+            elif shape.is_polygon() and shape.drectangle():
+                shape.box=shape.drectangle()
+                box = shape.box.transformed(transform)
+                entry = {
+                   "action": "add",
+                   "type": "box",
+                   "layer": [info.layer, info.datatype],
+                   "box": [box.left, box.bottom, box.right, box.top]
+                }
             elif shape.is_text():
                 text = shape.text
                 entry = {

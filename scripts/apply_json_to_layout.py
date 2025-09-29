@@ -34,7 +34,7 @@ def apply_json_to_layout(input_layout: str, json_file: str, output_layout: str):
             # Find or create layer
             layer_index = layout.find_layer(layer_num, datatype)
     
-            if layer_index < 0: #create layer index if it doesn't exist
+            if not layer_index: #create layer index if it doesn't exist
                 layer_index = layout.insert_layer(pya.LayerInfo(layer_num, datatype))
             shapes = cell.shapes(layer_index)
     
