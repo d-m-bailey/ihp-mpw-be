@@ -15,9 +15,9 @@
  <menu-path/>
  <interpreter>python</interpreter>
  <dsl-interpreter-name/>
- <text>import pya
+ <text>
+import pya
 import json
-import os
 
 # Get the current view and layout
 app = pya.Application.instance()
@@ -33,59 +33,70 @@ updates["cells"][cell_name] = []
 # Convert selection into a list of dicts
 json_data = []
 for s in lv.each_object_selected():
-        #entry = {"layer": None, "type": None, "data": None}
-        print(s)
+    # entry = {"layer": None, "type": None, "data": None}
+    print(s)
 
-        if not s.is_cell_inst():
-            shape = s.shape
-            transform = s.trans()
-            #layer_index = s.layer
-            #layer_info = ly.get_info(layer_index)
-            #entry["layer"] = f"{layer_info.layer}/{layer_info.datatype}"
-            #entry["layer"] = f"{s.layer}"
-            info = layout.get_info(s.layer)
+    if not s.is_cell_inst():
+        shape = s.shape
+        transform = s.trans()
+        info = layout.get_info(s.layer)
 
-            if shape.is_box():
+        if shape.is_box():
+            box = shape.box.transformed(transform)
+            entry = {
+               "action": "add",
+               "type": "box",
+               "layer": [info.layer, info.datatype],
+               "coords": [box.left, box.bottom, box.right, box.top]
+            }
+
+        elif shape.is_polygon():
+            if shape.drectangle():
+                shape.box = shape.drectangle()
                 box = shape.box.transformed(transform)
                 entry = {
                    "action": "add",
                    "type": "box",
                    "layer": [info.layer, info.datatype],
-                   "box": [box.left, box.bottom, box.right, box.top]
+                   "coords": [box.left, box.bottom, box.right, box.top]
                 }
-            elif shape.is_polygon() and shape.drectangle():
-                shape.box=shape.drectangle()
-                box = shape.box.transformed(transform)
-                entry = {
-                   "action": "add",
-                   "type": "box",
-                   "layer": [info.layer, info.datatype],
-                   "box": [box.left, box.bottom, box.right, box.top]
-                }
-            elif shape.is_text():
-                text = shape.text
-                entry = {
-                    "action": "add",
-                    "type": "label",
-                    "layer": [info.layer, info.datatype],
-                    "text": text.string,
-                    "x": text.transformed(transform).trans.disp.x,
-                    "y": text.transformed(transform).trans.disp.y
-                }
+
             else:
+                simplePolygon = shape.simple_polygon
+                transformedPolygon = simplePolygon.transformed(transform)
+                pointList = []
+                for point_it in transformedPolygon.each_point():
+                    pointList += [point_it.x, point_it.y]
                 entry = {
-                   "action": "ignore",
-                   "type": "other"
+                   "action": "add",
+                   "type": "polygon",
+                   "layer": [info.layer, info.datatype],
+                   "coords": pointList
                 }
-        else:
-              entry = {
-                 "action": "ignore",
-                 "type": "non-shape"
-              }
-              
-        updates["cells"][cell_name].append(entry)
-        #selection_data.append(entry)
 
+        elif shape.is_text():
+            text = shape.text
+            entry = {
+                "action": "add",
+                "type": "label",
+                "layer": [info.layer, info.datatype],
+                "text": text.string,
+                "x": text.transformed(transform).trans.disp.x,
+                "y": text.transformed(transform).trans.disp.y
+            }
+
+        else:
+            entry = {
+               "action": "ignore",
+               "type": "other"
+            }
+    else:
+        entry = {
+           "action": "ignore",
+           "type": "non-shape"
+        }
+
+    updates["cells"][cell_name].append(entry)
 
 # Open save file dialog
 filename = pya.QFileDialog.getSaveFileName(
